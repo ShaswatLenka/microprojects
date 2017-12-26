@@ -31,9 +31,6 @@ function SnowFlake() {
   }
 
   this.show = function() {
-    var thick = map(this.z, 0, 20, 1, 3);
-    strokeWeight(thick);
-    //stroke();
     if(this.z <= 5){
       ellipse(this.x, this.y, this.size, this.size );
     }
